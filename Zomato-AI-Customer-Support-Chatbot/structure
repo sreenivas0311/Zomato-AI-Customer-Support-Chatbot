@@ -1,0 +1,36 @@
+zomato-ai-agent/
+│
+├── .env                          # Secret credentials & connection strings
+├── requirements.txt              # Pinned project dependencies
+├── README.md                     # Architecture & setup documentation
+│
+├── certs/
+│   └── ca.pem                    # Aiven CA SSL certificate
+│
+├── config/
+│   ├── __init__.py
+│   └── settings.py               # Central environment config & app constants
+│
+├── src/
+│   ├── __init__.py
+│   │
+│   ├── database/                 # Layer 1: Data Access & Connection
+│   │   ├── __init__.py
+│   │   ├── connection.py         # Engine lifecycle, SSL pool, ping health check
+│   │   └── schema_metadata.py    # Table relationships, allowed schemas, views
+│   │
+│   ├── tools/                    # Layer 2: Functional Actions (Read vs Write)
+│   │   ├── __init__.py
+│   │   ├── sql_query_tool.py     # Safe read-only text-to-SQL runner
+│   │   └── ticket_actions.py     # Deterministic writes (create/update support tickets)
+│   │
+│   ├── agents/                   # Layer 3: Intelligence & Orchestration
+│   │   ├── __init__.py
+│   │   ├── prompts.py            # System instructions, few-shot examples, domain rules
+│   │   └── support_agent.py      # LLM agent factory, tool binding, conversation state
+│   │
+│   └── utils/                    # Layer 4: Shared Helpers
+│       ├── __init__.py
+│       └── validators.py         # Input sanitization and safety checks
+│
+└── app.py                        # Presentation Layer: Streamlit UI entry point
