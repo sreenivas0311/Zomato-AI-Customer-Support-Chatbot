@@ -48,7 +48,8 @@ The project aims to:
 
 
 ### Dark mode
-![Uploading image.png…]()
+<img width="1540" height="784" alt="image" src="https://github.com/user-attachments/assets/e8ff41e7-66e3-441e-b462-e0bdfd1f1b6e" />
+
 
 
 ---
@@ -58,7 +59,7 @@ The project aims to:
 | Layer | Technology |
 | :--- | :--- |
 | Front end | Streamlit **>= 1.40** (custom HTML/CSS bubbles, one small JS helper for scrolling and height fitting) |
-| Agent | LangChain (`langchain_core`, `langchain_google_genai`) with Google Gemini (tool calling) |
+| Agent | LangChain (`langchain_core`, `langchain_google_genai`) with Google Gemini (tool calling) |gemini-3.5-flash-lite
 | Database engine | MySQL 8.4 LTS |
 | Hosting | Aiven managed MySQL (SSL required) |
 | DB access | SQLAlchemy + PyMySQL, connection pooling, `pool_pre_ping` |
