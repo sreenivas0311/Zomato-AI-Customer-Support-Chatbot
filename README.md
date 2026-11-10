@@ -505,3 +505,6 @@ mysql --user=<DB_USER> -p --host=<DB_HOST> --port=<DB_PORT> -e "SHOW TABLES FROM
 - Explains the project goals, architecture, database, rules, setup and hosting.
 - Doubles as the runbook for Aiven and MySQL Workbench.
 - Update it whenever files, tables or rules change.
+- 
+### Streamlit deployed link
+- https://zomatosupportaichatbot.streamlit.app/
