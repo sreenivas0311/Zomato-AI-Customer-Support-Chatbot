@@ -1,31 +1,7 @@
 # Zomato AI Customer Support
 
-A WhatsApp-style, chat-first customer support bot that emulates Zomato's real-time order assistance. A Streamlit front end talks to a LangChain + Google Gemini agent, which reads and writes a transactional MySQL database hosted on Aiven. The agent handles live order tracking, delay complaints, cancellations with refunds, missing-item and food-quality disputes, ticket status, and escalation to a human agent.
+A chat-first customer support bot modelled on Zomato's in-app support chat, with a similar look and flow but a smaller feature set. A Streamlit front end talks to a LangChain + Google Gemini agent, which reads and writes a transactional MySQL database hosted on Aiven. The agent handles live order tracking, delay complaints, cancellations with refunds, missing-item and food-quality disputes, ticket status, and escalation to a human agent.
 
----
-
-## Table of Contents
-
-1. [Overview & Goals](#overview--goals)
-2. [Features](#features)
-3. [UI Preview](#ui-preview)
-4. [Tech Stack & Environment](#tech-stack--environment)
-5. [System Architecture](#system-architecture)
-6. [Project Structure](#project-structure)
-7. [Database Architecture](#database-architecture)
-8. [Data Generation & Setup](#data-generation--setup)
-9. [Business Rules by Order Status](#business-rules-by-order-status)
-10. [Agent Tools & Safety Guards](#agent-tools--safety-guards)
-11. [Configuration (`.env`)](#configuration-env)
-12. [Installation & Running the App](#installation--running-the-app)
-13. [Testing Each Layer](#testing-each-layer)
-14. [Hosting & Setting Up the Database on Aiven](#hosting--setting-up-the-database-on-aiven)
-15. [Managing and Updating Records via MySQL Workbench](#managing-and-updating-records-via-mysql-workbench)
-16. [Limitations & Notes](#limitations--notes)
-17. [Security Notes](#security-notes)
-18. [File Reference](#file-reference)
-
----
 
 ## Overview & Goals
 
@@ -68,10 +44,12 @@ The project aims to:
 ## UI Preview
 
 ### Light mode
-![Light mode UI](docs/ui_light.png)
+<img width="1539" height="784" alt="image" src="https://github.com/user-attachments/assets/0e589563-3f01-4c0f-8397-07751f921cf8" />
+
 
 ### Dark mode
-![Dark mode UI](docs/ui_dark.png)
+![Uploading image.png…]()
+
 
 ---
 
